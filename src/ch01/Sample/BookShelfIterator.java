@@ -12,7 +12,7 @@ public class BookShelfIterator implements Iterator<Book> {
         this.index = 0;
     }
 
-    @Override
+    @Override // Override annotation: 상위 클래스나 인터페이스에서 물러받아서 구현한 메소드 의미
     public boolean hasNext() {
         if (index < bookShelf.getLength()) {
             return true;
