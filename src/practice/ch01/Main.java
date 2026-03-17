@@ -4,6 +4,8 @@ import java.util.Iterator;
 
 public class Main { // 메인메서드를 제공하는 클라이언트
     public static void main(String[] args) {
+        System.out.println("학번: 20220753, 이름: 김나영"); // 과제 제출 Main 클래스에 학번과 이름을 출력하는 코드 추가
+
         // 책 테스트
         Book book = new Book("Java Programming"); // 책 생성
         System.out.println("Book name: " + book.getName()); // 책 이름 출력

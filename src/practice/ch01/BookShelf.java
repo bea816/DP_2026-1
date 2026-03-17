@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class BookShelf implements Iterable<Book> {
     // public class BookShelf {
-        private Book[] books;
+        private Book[] books; // 배열은 크기가 늘어날 수 X
         private int last = 0;
 
         public BookShelf(int maxsize) {
