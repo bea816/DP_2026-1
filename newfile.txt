@@ -1,0 +1,6 @@
+#written by FileProperties
+#Fri Mar 20 23:25:20 KST 2026
+depth=32
+width=1024
+weight=65
+height=512
