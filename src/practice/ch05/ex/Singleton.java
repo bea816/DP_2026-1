@@ -9,7 +9,7 @@ public class Singleton {
         slowdown(); // 생성 시간이 오래 걸리도록 하기 위해 호출
     }
 
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if (singleton == null) { // 첫 번째 호출 될 때만 인스턴스 생성됨
             singleton = new Singleton();
         }
