@@ -1,11 +1,12 @@
 package practice.ch02.inheritance;
 
+
+// 클라이언트
 public class Main{
     public static void main(String[] args) {
+        // 어댑터 없이 Banner 클래스 이용
         Banner banner = new Banner("Hello");
-
         banner.showWithParen();
-
         banner.showWithAster();
 
         // 어댑터 이용

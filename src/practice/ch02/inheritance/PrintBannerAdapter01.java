@@ -1,6 +1,7 @@
 package practice.ch02.inheritance;
 
 // 어댑터
+// Banner 클래스를 상속하면서 Print 인터페이스 구현
 public class PrintBannerAdapter01 extends Banner implements Print {
     // 부모 Banner에게 메소드 물려받음 -> this로 생략
 
