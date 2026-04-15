@@ -12,8 +12,8 @@ public class Main {
 
         // 공장을 통해서 IDCard 객체를 생성
         IDCardFactory f = new IDCardFactory();
-        IDCard c = (IDCard) f.create("김나영");
-        // Product c = f.create("김나영");
+        Product c = f.create("김나영");
+        // IDCard c = (IDCard) f.create("김나영"); // 형변환 
         c.use();
     }
 }
