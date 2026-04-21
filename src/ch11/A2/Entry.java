@@ -28,14 +28,14 @@ public abstract class Entry {
         return getName() + " (" + getSize() + ")";
     }
 
-    // 전체 경로를 가져온다 
+    // 전체 경로를 가져온다 - 수업시간에 설명
     public String getFullName() {
         StringBuilder fullname = new StringBuilder();
         Entry entry = this;
         do {
             fullname.insert(0, entry.getName());
             fullname.insert(0, "/");
-            entry = entry.parent;
+            entry = entry.parent; // 중요. 현재 객체의 부모를 다시 엔트리로 넣음 = 부모로 이동
         } while (entry != null);
         return fullname.toString();
     }
