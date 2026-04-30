@@ -6,17 +6,17 @@ import java.util.List;
 public class MultiStringDisplay extends Display {
     // 표시 문자열 저장 장소
     private List<String> body = new ArrayList<>();
-    // 표시 문자열 최대 문자 수 
-    private int columns = 0;
+    // 표시 문자열 최대 문자 수
+    private int columns = 0; // 현재 최대 문자 수
 
     // 문자열 추가 
     public void add(String msg) {
         body.add(msg);
-        if (columns < msg.length()) {
+        if (columns < msg.length()) { // 입력으로 들어온 문자열이 현재 최대 문자수보다 길면
             // 최대 문자 수 갱신
             columns = msg.length();
         }
-        updatePadding();
+        updatePadding(); // -> 안 하면?
     }
 
     @Override
