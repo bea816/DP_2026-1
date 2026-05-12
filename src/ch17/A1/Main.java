@@ -7,6 +7,6 @@ public class Main {
         Observer observer2 = new GraphObserver();
         generator.addObserver(observer1);
         generator.addObserver(observer2);
-        generator.execute();
+        generator.execute(); // 수를 생성한다
     }
 }
