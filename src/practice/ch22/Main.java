@@ -52,7 +52,8 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
     // WindowListener용 
     @Override
     public void windowClosing(WindowEvent e) {
-        System.exit(0);
+        System.exit(0); // 없으면 진짜 창이 닫히지 않음
+        System.out.println("windowClosing");
     }
 
     @Override public void windowActivated(WindowEvent e) {}

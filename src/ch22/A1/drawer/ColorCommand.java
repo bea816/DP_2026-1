@@ -10,6 +10,7 @@ public class ColorCommand implements Command {
     private Color color;
 
     // 생성자 
+    // 어느 도화지의 어떤 색으로 그릴지 지정
     public ColorCommand(Drawable drawable, Color color) {
         this.drawable = drawable;
         this.color = color;

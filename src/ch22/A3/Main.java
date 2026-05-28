@@ -18,7 +18,7 @@ public class Main extends JFrame {
     // 생성자 
     public Main(String title) {
         super(title);
-
+        // 리스너 클래스 대신 어댑터 클래스 사용
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
