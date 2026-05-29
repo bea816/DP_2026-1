@@ -30,4 +30,9 @@ public class BigChar {
     public void print() {
         System.out.print(fontdata);
     }
+
+    // 추가
+    public void print(String colorCode) {
+        System.out.print(colorCode + fontdata + Main.RESET);
+    }
 }
